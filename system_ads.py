@@ -4,7 +4,7 @@ import os.path
 
 def main():
     while True:
-        f = os.path.exists('/home/admin/web/druxye.biz/public_html/ads.txt')
+        f = os.path.exists('/home/admin/web/herepe.askwheel.com/public_html/ads.txt')
         
         if f == True:
             print("[*] file exists")
@@ -15,7 +15,7 @@ def main():
             print("[!] file not found")
             print("[!] creating file")
              
-            a = open('/home/admin/web/druxye.biz/public_html/ads.txt','a')
+            a = open('/home/admin/web/herepe.askwheel.com/public_html/ads.txt','a')
             a.write('google.com, pub-5957983578039876, DIRECT, f08c47fec0942fa0')
             a.close()
             time.sleep(5)

